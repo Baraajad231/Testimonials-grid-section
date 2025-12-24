@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(260, 100%, 95%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* توسيط أفقي */
+  align-items: center;
+}
+
+p {
+  font-size: 13px;
+}
+.main-body {
+  font-family: "Barlow Semi Condensed";
+  border: 2px solid;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 25px;
+  width: 1200px;
+  border: none;
+}
+
+.paragraph {
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.img {
+  display: inline;
+  width: 35px;
+  height: auto;
+  border: 2px solid;
+  border-radius: 50%;
+  border-color: white;
+}
+
+.paragraph--1 {
+  background-color: hsl(263, 55%, 52%);
+  grid-column: 1/3;
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 100px) calc(15% - 20px);
+}
+
+.paragraph--2 {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.paragraph--3 {
+  color: black;
+  background-color: hsl(0, 0%, 100%);
+  grid-column: 4/5;
+  grid-row: 1 / span 2;
+}
+
+.paragraph--4 {
+  color: black;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.paragraph--5 {
+  background-color: hsl(219, 29%, 14%);
+  grid-column: 2/4;
+}
+
+.intro {
+  display: inline-block;
+  margin-left: 10px;
+}
+.graduate {
+  opacity: 0.7;
+}
+
+.brief-words {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.more-details {
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
+header {
+  margin-bottom: 20px;
+}
